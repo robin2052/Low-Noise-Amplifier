@@ -83,6 +83,74 @@ Del<1
 # Result Of the design 
 <img width="862" height="759" alt="image" src="https://github.com/user-attachments/assets/68e5cac8-b8db-43f7-9798-74a7783dd07f" />
 
+# p1dB compression point 
+<img width="994" height="640" alt="image" src="https://github.com/user-attachments/assets/ce2aa216-48b1-4421-b219-e32b66bb5ac1" />
+
+Here the output referred compression point is -1.548 . A negative output 1-dB compression point (P1dB) simply means the amplifier is saturating at an output power below 0 dBm (reference 1 mW). That’s not an “error” — it just says the LNA can’t deliver a large absolute output level before compressing. To make the output P1dB more positive (i.e., increase the power the LNA can deliver linearly) you must improve the amplifier’s linearity / power-handling. Below are concrete, prioritized ways to do that, with the main tradeoffs you should expect.
+
+# Quick causes (why P1dB is negative)
+
+Device is small (limited Vce/Vds and Id) so it saturates early.
+Bias point optimized for lowest noise (low current / small V) — sacrifices linearity.
+Matching network/gain is high at the output so the small-signal output reaches compression sooner.
+Topology (single-ended common-source/CE) has limited swing; no cascode or power boosting stage.
+Thermal or load mismatches/clipping in the output network
+
+# Practical ways to increase P1dB (ranked, with pros/cons)
+## 1.Increase device current (bias) / supply voltage
+What it does: gives larger voltage swing and higher output power before nonlinearity.
+Pros: simple, immediate P1dB improvement.
+123456Cons: raises noise figure slightly, increases power dissipation and temperature; may require different bias circuitry.
+
+<img width="1907" height="842" alt="image" src="https://github.com/user-attachments/assets/fab9cda3-cccb-4cee-9263-7925c9662eed" />
+
+ When the supply voltage / Vdd increased from 630 to 650 . The gain Icreases to 13 dB and the 1 dB compression point also increases from -1.5 to -1.2. Now it is on -1.2015 dB . Here we had to compromise the Noise . The noise margin increases which is not desirable .
+
+ <img width="1906" height="852" alt="image" src="https://github.com/user-attachments/assets/3dd57a50-8bd4-4198-8939-cb0a649601bc" />
+
+ Vdd= 700m.
+
+ <img width="1909" height="844" alt="image" src="https://github.com/user-attachments/assets/730a6192-787b-4e51-9489-bd7e1d82f205" />
+
+ Vdd = 800m. Here the 1 dB compression point become positive .
+
+## Use a larger device (wider transistor) or parallel devices
+What it does: higher current handling and output swing; increases power capability.
+Pros: better P1dB and potentially lower output impedance.
+Cons: usually increases input capacitance → can hurt noise and matching; layout area grows
+
+<img width="988" height="616" alt="image" src="https://github.com/user-attachments/assets/92877800-a649-4f8a-bcdb-7e497007aa2c" />
+The width increases to 60 u and the gain increases . Also the noise margin decreases. As we know that the noise margin decreases with the increase of width . Here the compression point also in better position than the original circuit . it improves from -1.5 to -1.27 dB. In this case the circuit become unstable . The value of kF is less than 1.
+
+<img width="746" height="338" alt="image" src="https://github.com/user-attachments/assets/97f474a4-0cf3-49fb-a333-c642d7f442df" />
+
+<img width="1234" height="521" alt="image" src="https://github.com/user-attachments/assets/847ad85d-5232-48bd-a997-a06ad1a2c845" />
+
+<img width="1011" height="467" alt="image" src="https://github.com/user-attachments/assets/1342daf6-7fe7-4e2d-abea-dd466a8ea1cd" />
+
+<img width="1158" height="511" alt="image" src="https://github.com/user-attachments/assets/200ede42-ca06-46ba-b6f9-ab59aa2270a3" />
+
+<img width="815" height="530" alt="image" src="https://github.com/user-attachments/assets/585d5c0e-0c9c-4ef0-a8ca-a2b3c601944e" />
+
+<img width="1125" height="355" alt="image" src="https://github.com/user-attachments/assets/1b93e4f5-5d4f-4ba0-a47d-56078843cf24" />
+
+
+## Change topology to cascode or add a buffered/following gain stage
+What it does: cascode reduces Miller effect and allows higher output swing; add a driver stage (class A/B) after low-noise front-end to provide gain and linearity.
+Pros: preserves LNA NF (front end) while improving output linearity.
+Cons: added complexity, more power, potential stability issues.
+
+## Add feedback (degeneration) or use source/emitter degeneration
+What it does: linearizes device by negative feedback; increases linear input/output range.
+Pros: linearity improves, sometimes IP3 and P1dB improve noticeably.
+Cons: reduces gain, can slightly worsen NF, requires re-matching.
+
+
+
+
+
+
+
 
 
 
