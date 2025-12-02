@@ -53,6 +53,49 @@ You cannot eliminate them — they are consequences of physics
 <img width="1515" height="732" alt="image" src="https://github.com/user-attachments/assets/d2786167-0ec4-418e-814e-2af446a1e31b" />
 <img width="1111" height="215" alt="image" src="https://github.com/user-attachments/assets/f3513f00-2757-4ea3-b218-b0ca38a4bcf1" />
 
+<img width="1366" height="603" alt="image" src="https://github.com/user-attachments/assets/631d2fc9-5825-4152-ae0c-8e3e95ab73c0" />
+
+<img width="1376" height="766" alt="image" src="https://github.com/user-attachments/assets/2ec9a517-5319-45b3-9625-7e9f911ccca8" />
+
+
+# Alternative Form of the Noise Factor Equation
+
+<img width="1363" height="621" alt="image" src="https://github.com/user-attachments/assets/7a782e5f-746f-4efa-9224-bcba5746679a" />
+
+<img width="1349" height="244" alt="image" src="https://github.com/user-attachments/assets/53716e3e-7c83-4291-9b32-a8425f1c5da2" />
+
+<img width="970" height="786" alt="image" src="https://github.com/user-attachments/assets/04c4f75d-e08c-4c34-b3f7-8c7a87dc9ac2" />
+
+<img width="829" height="476" alt="image" src="https://github.com/user-attachments/assets/8b209474-934e-4aad-88c5-10a5d170be77" />
+
+<img width="849" height="420" alt="image" src="https://github.com/user-attachments/assets/ea812a60-053a-4e9d-9a7d-c56747a597da" />
+
+<img width="829" height="757" alt="image" src="https://github.com/user-attachments/assets/13bd32e1-1526-4926-afb6-5fcfd85fdaff" />
+
+<img width="1053" height="184" alt="image" src="https://github.com/user-attachments/assets/5267dd0f-1f4a-41c1-9177-ce2e01f4e54d" />
+
+<img width="943" height="547" alt="image" src="https://github.com/user-attachments/assets/0371194f-1220-4c13-b236-20105c8c859e" />
+
+<img width="927" height="531" alt="image" src="https://github.com/user-attachments/assets/ae5e54b3-adcd-40c7-963e-10efa210f7ec" />
+
+<img width="895" height="616" alt="image" src="https://github.com/user-attachments/assets/64a2b3a7-dd15-4dd1-98e3-9752a7ebb634" />
+
+<img width="902" height="799" alt="image" src="https://github.com/user-attachments/assets/1fec1e9b-23fd-42ba-a528-d8c82040a11f" />
+
+<img width="924" height="663" alt="image" src="https://github.com/user-attachments/assets/dd1621f7-a1dd-404d-887d-27b778d9390d" />
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
