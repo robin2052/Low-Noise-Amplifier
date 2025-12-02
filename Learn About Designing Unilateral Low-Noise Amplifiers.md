@@ -1,3 +1,5 @@
+Source : https://www.allaboutcircuits.com/technical-articles/learn-about-designing-unilateral-low-noise-amplifiers/
+
 In receiver applications, the first amplifier in the signal chain has a dominant effect on the noise performance of the overallsystem. This amplifier should exhibit as low a noise figure as 
 possible while providing an acceptably high power gain. Thedesign procedure for this low-noise amplifier (LNA) should therefore account for both gain and noise performance.
 
